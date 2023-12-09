@@ -1,6 +1,7 @@
-from django.urls import path
+from django.contrib import admin
+from django.urls import path, include
 from .views import main
 
 urlpatterns = [
-    path("", include("api.urls"))
+    path("home", main)
 ]
